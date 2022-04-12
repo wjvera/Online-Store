@@ -30,12 +30,7 @@
        }
 
        .mobile-menu{
-        border: 1px solid red;
         padding: 24px;
-       }
-
-       .mobile-menu ul li{
-        list-style: none;
        }
 
        .mobile-menu ul li a{
@@ -47,8 +42,32 @@
        }
 
        .mobile-menu ul{
-        border: 1px solid green;
-        
+        padding: 0;
+        margin: 24px 0 0;
+        list-style: none;
+       }
+
+       .mobile-menu ul:nth-child(1){
+           border-bottom: 1px solid var(--very-light-pink);
+       }
+
+       .mobile-menu ul:nth-child(2){
+           margin-bottom: 50px;
+           margin-top: 50px;
+       }
+
+       .mobile-menu ul li{
+        margin-bottom: 20px;
+       }
+
+       .mobile-menu .email{
+           color: var(--very-light-pink);
+           font-size: var(--sm);
+       }
+
+       .mobile-menu .sign-out{
+           color: var(--hospital-green);
+           font-size: var(--sm);
        }
 
     </style>
@@ -74,7 +93,7 @@
 
         <ul>
             <li><a href="/" class="email">wjvera@codervera.com</a></li>
-            <li><a href="/" class="sign-out">My account</a></li>
+            <li><a href="/" class="sign-out">Sign-out</a></li>
         </ul>
 
     </div>
