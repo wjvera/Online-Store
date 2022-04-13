@@ -27,6 +27,97 @@
            margin: 0;
            font-family: 'Quicksand', sans-serif;
        }
+
+       .menu{
+           display: none;
+
+       }
+
+       .logo{
+           width: 130px;
+       }
+
+       .navbar-left ul,
+       .navbar-right ul{
+           list-style: none;
+           padding: 0;
+           margin: 0;
+           display: flex;
+           align-items: center;
+           height: 60px;
+       }
+
+       .navbar-left{
+           display: flex;
+       }
+
+       .navbar-left ul{
+           margin-left: 12px;
+       }
+
+       nav{
+           display: flex;
+           justify-content: space-between;
+           padding: 0 24px;
+           border-bottom: 1px solid var(--text-input-field);
+       }
+
+
+       
+
+       .navbar-left ul li a,
+       .navbar-right ul li a{
+           text-decoration: none;
+           color: var(--very-light-pink);
+           border: 1px solid var(--white);
+           padding: 8px;
+       }
+
+       .navbar-left ul li a:hover,
+       .navbar-right ul li a:hover{
+           border: 1px solid var(--hospital-green);
+           border-radius: 10px;
+           color: var(--hospital-green );
+       }
+
+       .navbar-email{
+           color: var(--very-light-pink);
+           font-size: var(--sm);
+           margin-right: 20px;
+       }
+
+       .navbar-shopping-card{
+           position: relative;
+       }
+
+       .navbar-shopping-card div{
+           width: 16px;
+           height: 16px;
+           background-color: var(--hospital-green);
+           border-radius: 10px;
+           font-size: var(--sm);
+           font-weight: bold;
+           position: absolute;
+           top: -6px;
+           right: -3px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+       }
+
+       @media (max-width:640px){
+           .menu{
+               display: block;
+           }
+
+           .navbar-left ul{
+               display: none;
+           }
+
+           .navbar-email{
+               display: none;
+           }
+       }
     </style>
 </head>
 <body>
@@ -34,7 +125,8 @@
         <img src="/icons/icon_menu.svg" alt="menu" class="menu">
 
         <div class="navbar-left">
-            <img src="/logos/favicon_yard_sale.svg" alt="logo" class="logo">
+
+            <img src="/logos/logo_yard_sale.svg" alt="logo" class="logo">
 
             <ul>
                 <li>
@@ -61,7 +153,7 @@
 
         <div class="navbar-right">
             <ul>
-                <li>wjvera@codervera.com</li>
+                <li class="navbar-email">wjvera@codervera.com</li>
 
                 <li class="navbar-shopping-card">
                     <img src="/icons/icon_shopping_cart.svg" alt="">
